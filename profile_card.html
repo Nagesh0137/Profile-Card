@@ -8,8 +8,7 @@
     <script src="https://kit.fontawesome.com/e70eeb56bb.js" crossorigin="anonymous"></script>
     <style>
         body{
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(194,48,48,1) 100%);
-}
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(194,48,48,1) 100%);}
 .main_div{
     width: 30%;
     height: auto;
@@ -20,12 +19,6 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(194,48,48,1) 10
     z-index: 1;
     color: white;
     text-shadow: 10px 8px 8px black;
-
-/**/
-
-}
-*{
-    z-index: 1;
 }
 .profile_back{
     width: 100%;
@@ -33,7 +26,7 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(194,48,48,1) 10
     position: relative;
     background:url('https://img.freepik.com/free-vector/blue-futuristic-networking-technology_53876-97395.jpg?size=626&ext=jpg&ga=GA1.1.926043839.1696314731&semt=ais')no-repeat;
     background-size: 100%,100%;
-    border-radius:20px;
+    border-radius:15px;
     opacity:1;
 
 }
@@ -45,13 +38,14 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(194,48,48,1) 10
     box-shadow:8px 5px 10px 1px black;
     box-sizing: border-box;
     border-radius: 50%;
-    background-image: url('https://media.licdn.com/dms/image/D4E35AQEuBAsCUb07Pw/profile-framedphoto-shrink_200_200/0/1696911892990?e=1699380000&v=beta&t=AQc5EImuXIRqBEqSiCHXqln0AKEb6_KgsusnKwRatfc');
+    background-image: url('profile.jpg');
     background-repeat: no-repeat;
     background-size: 140%,120%;
     background-position:top center;
     filter: saturate(100%);
-
     position: absolute;
+    display: flex;
+    justify-content: center;
     top:40px;
     left: 140px;
 }
@@ -65,8 +59,8 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(194,48,48,1) 10
     margin-top: 40px;
 }
 .name h1{
-font-family:monospace;
-font-size: 25px;
+    font-family:monospace;
+    font-size: 25px;
 }
 .name p{
     line-height: 0px;
@@ -81,9 +75,7 @@ font-size: 25px;
     text-align: center;
     display:inline-block;
     display: flex;
-/*    align-items:center;*/
-/*        align-content: center;*/
-      justify-content: center;
+    justify-content: center;
 }
 .icon_back i{
     color:white;
@@ -91,7 +83,6 @@ font-size: 25px;
     font-size: 30px;
 }
 .icon span{
-/*    background-color:gold;*/
     margin-left: 20px;
     margin-top: 20px;
     padding: 7px;
@@ -139,11 +130,43 @@ font-size: 25px;
     font-weight: bolder;
     text-shadow: 5px 5px 8px black;
     box-shadow: 3px 5px 10px 0px black;
-
-
-
 }
-
+.btns button:hover{
+    cursor: pointer;
+}
+..icon_back i:hover{
+    cursor: pointer;
+}
+@media only screen and (max-width: 667px) {
+  .main_div{
+     width: 80%;
+    }
+    .profile{
+        position: relative;
+        left: 0%;
+    }
+    .name{
+        width: 100%;
+    }
+    .icon{
+        width: 100%;
+    }
+}
+@media only screen and (min-width:668px) {
+    .main_div{
+     width: 30%;
+    }
+    .profile{
+        position:relative;
+        left:0%;
+    }
+    .name{
+        width: 100%;
+    }
+    .icon{
+        width: 100%;
+    }
+}
     </style>
 </head>
 <body>
