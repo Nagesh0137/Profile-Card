@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e70eeb56bb.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(194,48,48,1) 100%);
+}
+.main_div{
+    width: 30%;
+    height: auto;
+    margin:auto;
+    margin-top: 100px;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,41,0.7399334733893557) 50%, rgba(252,176,69,1) 100%);    border-radius:20px;
+    box-shadow:3px 0px 5px 1px whitesmoke,5px 5px 7px 5px black ;
+    z-index: 1;
+    color: white;
+    text-shadow: 10px 8px 8px black;
+
+/**/
+
+}
+*{
+    z-index: 1;
+}
+.profile_back{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    background:url('https://img.freepik.com/free-vector/blue-futuristic-networking-technology_53876-97395.jpg?size=626&ext=jpg&ga=GA1.1.926043839.1696314731&semt=ais')no-repeat;
+    background-size: 100%,100%;
+    border-radius:20px;
+    opacity:1;
+
+}
+.profile{
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    border: 2px solid white;
+    box-shadow:8px 5px 10px 1px black;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-image: url('https://media.licdn.com/dms/image/D4E35AQEuBAsCUb07Pw/profile-framedphoto-shrink_200_200/0/1696911892990?e=1699380000&v=beta&t=AQc5EImuXIRqBEqSiCHXqln0AKEb6_KgsusnKwRatfc');
+    background-repeat: no-repeat;
+    background-size: 140%,120%;
+    background-position:top center;
+    filter: saturate(100%);
+
+    position: absolute;
+    top:40px;
+    left: 140px;
+}
+.profile img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.name{
+    text-align: center;
+    margin-top: 40px;
+}
+.name h1{
+font-family:monospace;
+font-size: 25px;
+}
+.name p{
+    line-height: 0px;
+    font-weight: bold;
+}
+.name i{
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform:unset;
+}
+.icon{
+    text-align: center;
+    display:inline-block;
+    display: flex;
+/*    align-items:center;*/
+/*        align-content: center;*/
+      justify-content: center;
+}
+.icon_back i{
+    color:white;
+    border-radius: 50%;
+    font-size: 30px;
+}
+.icon span{
+/*    background-color:gold;*/
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 7px;
+    border-radius: 50%;
+}
+.b1{
+    background-color:#0A66C2;
+}
+.icon_back .fa-linkedin{
+    color:#2296ec;
+    box-shadow: 0px 0px 1px 1px whitesmoke;
+}
+.b3{
+    background-image: url('https://i.pinimg.com/originals/a3/1e/47/a31e470fc1911b2d1c4e683155216716.png');
+    background-repeat: no-repeat;
+    background-size: 140%,140%;
+    background-position:center;
+}
+.b2{
+    background-color: black;
+}
+.b4{
+  background-color:black;
+}
+.icon_back .fa-paper-plane{
+    font-size: 25px;
+    color: #2296EC;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+
+}
+.btns button{
+    width: 100px;
+    padding: 8px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    border-radius: 8px;
+    border:none;
+    box-shadow:0px 0px 5px 0px black;
+    background-color: #00ffff;
+    color:black;
+    font-weight: bolder;
+    text-shadow: 5px 5px 8px black;
+    box-shadow: 3px 5px 10px 0px black;
+
+
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="main_div">
+        <div class="profile_back">
+            <div class="profile">
+            </div>
+        </div>
+        <div class="name">
+            <h1>Nagesh Sonawane</h1>
+            <p>Front-end developer</p>
+            <i class="fa-solid fa-location-dot">Ahmednagar,Bharat</i>
+        </div>
+        <div class="icon">
+            <span class="icon_back b1">
+              <a href="https://www.linkedin.com/in/nagesh-sonawane-7203b828a/" target="_blank"> <i class="fa-brands fa-linkedin-in"></i></a>
+            </span>
+            <span class="icon_back b2">
+               <a href="https://github.com/Nagesh0137" target="_blank"> <i class="fa-brands fa-github"></i></a>
+            </span>
+            <span class="icon_back b3">
+               <a href="https://www.instagram.com/nagesh_sonawane013_7/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+            </span>
+            <span class="icon_back b4">
+            <a href="https://mail.google.com/" target="_blank"> <i class="fa-solid fa-paper-plane"></i></a>
+            </span>
+        </div>
+        <div class="btns">
+            <a href="https://www.linkedin.com/in/nagesh-sonawane-7203b828a/" target="_blank"> <button class="bt1">Follow</button></a>
+
+           <a href="https://api.whatsapp.com/send/?phone=%2B918888430137&text&type=phone_number&app_absent=0"target="_blank"><button>Contact us</button></a>
+        </div>
+    </div>
+
+    </section>
+</body>
+</html>
